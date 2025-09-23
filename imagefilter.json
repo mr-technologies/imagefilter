@@ -129,8 +129,7 @@
           "gpu_device_id": "cuda_dev",
           "elements": [
             { "id": "import_from_host", "type": "import_from_host" },
-            { "id": "export_to_device", "type": "export_to_device", "output_format": "NV12_BT709", //change "NV12_BT709" to "YV12_BT709" on Jetson
-                                                                                                              "output_name": "yuv" }
+            { "id": "export_to_device", "type": "export_to_device", "output_format": "YV12_BT709", "output_name": "yuv" }
           ],
           "connections": [
             { "src": "import_from_host", "dst": "export_to_device" }
